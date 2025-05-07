@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginVertical="20dp"
+        android:textColor="#16A085"
+        android:text="Sửa chương"/>
+    <EditText
+        android:id="@+id/input_ten_chuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên chương"
+        android:padding="20dp"
+        android:background="@drawable/boc_goc"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/input_noi_dung_chuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nội dung chương"
+        android:minLines="5"
+        android:maxLines="5"
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:padding="20dp"
+        android:background="@drawable/boc_goc"
+        android:inputType="textMultiLine"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

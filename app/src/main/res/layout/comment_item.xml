@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="500dp">
+
+            <ImageView
+                android:id="@+id/imgUser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_comment"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp">
+
+            <TextView
+                android:id="@+id/textViewUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trần Quang Cường"
+                android:fontFamily="@font/playfair_display"
+                android:textSize="17sp"
+                android:textColor="#ff4500"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trần Quang Cường"
+                android:maxWidth="250dp"
+                android:fontFamily="@font/playfair_display"
+                android:textSize="13sp" /> <!-- Sửa 'dp' thành 'sp' -->
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#808080"
+            android:textStyle="italic"
+            android:text="Vừa xong"
+            android:layout_gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_comment"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="10dp">
+            <TextView
+                android:id="@+id/textViewUserNameRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trần Quang Cường"
+                android:fontFamily="@font/playfair_display"
+                android:textSize="17sp"
+                android:layout_gravity="end"
+                android:textColor="#ff4500"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/textViewCommentRight"
+                android:layout_width="wrap_content"
+                android:maxWidth="250dp"
+                android:layout_height="wrap_content"
+                android:text="Trần Quang Cường"
+                android:fontFamily="@font/playfair_display"
+                android:textSize="13sp" /> <!-- Sửa 'dp' thành 'sp' -->
+        </LinearLayout>
+                <TextView
+                android:layout_marginTop="8dp"
+                android:id="@+id/textViewDateRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:textColor="#808080"
+                android:textStyle="italic"
+                android:text="24-10-2003" />
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            app:cardCornerRadius="500dp">
+
+            <ImageView
+                android:id="@+id/imgUserRight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

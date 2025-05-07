@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.CreateAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/left"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome,"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfair_display"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký tài khoản"
+            android:textSize="23sp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/playfair_display"
+            />
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginVertical="10dp"
+            android:hint="Họ và tên"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/boc_goc"/>
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:layout_marginVertical="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/boc_goc"/>
+        <!-- Màu sắc tùy chỉnh -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boc_goc">
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Password"
+                android:background="@null"
+                android:inputType="textPassword" />
+            <ImageButton
+                android:id="@+id/btnViewPass"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/show"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="-50dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp"
+            android:id="@+id/thongBaoLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF0000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/boc_goc"
+            android:layout_marginBottom="15dp">
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="10dp"
+                android:hint="Nhập lại mật khẩu"
+                android:background="@null"
+                android:inputType="textPassword" />
+            <ImageButton
+                android:id="@+id/btnViewPass1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/show"
+                android:scaleType="fitXY"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="-50dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/bg_btn"
+            android:drawablePadding="8dp"
+            android:text="Gửi mã xác thực"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="17dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:paddingTop="16dp" />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:id="@+id/editTextVerificationCode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập mã xác thực"
+            android:visibility="gone"
+            android:paddingHorizontal="10dp"
+            android:background="@drawable/boc_goc"/>
+
+        <Button
+            android:layout_marginVertical="10dp"
+            android:id="@+id/buttonVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Xác thực"
+            android:visibility="gone"
+            android:background="@drawable/bg_btn"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

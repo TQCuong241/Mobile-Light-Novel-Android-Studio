@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/bg_icon"
+        android:label="Truyện Pro"
+        android:roundIcon="@drawable/bg_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTruyenChu"
+        tools:targetApi="31">
+        <activity
+            android:name=".napTien.NapTien"
+            android:exported="false" />
+        <activity
+            android:name=".danhSachChuong.DanhSachChuong"
+            android:exported="false" />
+        <activity
+            android:name=".docTruyen.BotDocTruyen"
+            android:exported="false" />
+        <activity
+            android:name=".account.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".upTruyen.DanhSachChuong"
+            android:exported="false" />
+        <activity
+            android:name=".upTruyen.TruyenDaDang"
+            android:exported="false" />
+        <activity
+            android:name=".upTruyen.UpTruyen"
+            android:exported="false" />
+        <activity
+            android:name=".search.SearchTruyen"
+            android:exported="false" />
+        <activity
+            android:name=".account.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".love.DanhSachLove"
+            android:exported="false" />
+        <activity
+            android:name=".lichSu.LichSu"
+            android:exported="false" />
+        <activity
+            android:name=".comment.Comment"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".docTruyen.DocTruyen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".chuong.MainMota"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".account.Login"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".account.CreateAccount"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".truyen.DanhSachTruyen"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

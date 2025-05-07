@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "939941587494",
+    "firebase_url": "https://app-truyen-chu-2b71a-default-rtdb.firebaseio.com",
+    "project_id": "app-truyen-chu-2b71a",
+    "storage_bucket": "app-truyen-chu-2b71a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939941587494:android:fa69f3bbe2baedbeeb54e7",
+        "android_client_info": {
+          "package_name": "com.example.apptruyenchu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtEslj5t6WlZnkEjHEkHOkHtVPSkXN050"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

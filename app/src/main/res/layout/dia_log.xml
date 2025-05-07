@@ -1,0 +1,52 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/btnDSChuong"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:contentDescription="Next Button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/list" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Danh sách chương"/>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/btnMusic"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:background="@null"
+        android:layout_gravity="center"
+        android:contentDescription="Next Button"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/music" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Nghe truyện"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<!-- res/drawable/dialog_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#D42A87" /> <!-- Màu nền cho dialog -->
+    <corners android:radius="16dp"/> <!-- Bán kính bo góc -->
+</shape>
